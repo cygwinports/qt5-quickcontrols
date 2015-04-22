@@ -1,7 +1,7 @@
 inherit qt5-qmake
 
 NAME="qt5-quickcontrols"
-VERSION=5.3.2
+VERSION=5.4.1
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Qt C++ application framework (QtQuick controls)"
@@ -19,6 +19,8 @@ qt5_quickcontrols_CONTENTS="usr/lib/qt5/qml/QtQuick/ usr/share/doc/${NAME}/"
 qt5_quickcontrols_doc_CATEGORY="Doc"
 qt5_quickcontrols_doc_CONTENTS="usr/share/qt5/doc/qtquick*"
 qt5_quickcontrols_examples_CONTENTS="usr/lib/qt5/examples/quick/"
+
+DIFF_EXCLUDES="doc"
 
 src_compile() {
 	cd ${B}
